@@ -1,0 +1,431 @@
+
+      /* =========================
+   GLOBAL
+========================= */
+      :root {
+        --primary: #2563eb;
+        --primary-dark: #1d4ed8;
+        --background: #f1f5f9;
+        --text: #1e293b;
+        --muted: #64748b;
+        --border: #e2e8f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background: var(--background);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .page-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      /* =========================
+   HEADER
+========================= */
+      .main-header {
+        padding: 65px 20px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(135deg, #1d4ed8, #6366f1);
+      }
+
+      .header-content {
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .header-content h1 {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .header-content p {
+        margin: 0;
+        font-size: 1.1rem;
+        color: #e0e7ff;
+      }
+
+      /* =========================
+   MAIN CONTENT
+========================= */
+      .content-wrapper {
+        width: min(1100px, 100%);
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .content-wrapper .card {
+        position: relative;
+        margin-bottom: 28px;
+        padding: 30px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 4px 15px rgb(15 23 42 / 5%);
+        transition:
+          box-shadow 0.25s ease,
+          transform 0.25s ease;
+      }
+
+      .content-wrapper .card:hover {
+        box-shadow: 0 10px 25px rgb(15 23 42 / 9%);
+      }
+
+      .card-header-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 52px;
+        height: 52px;
+        margin-bottom: 12px;
+        border-radius: 14px;
+        background: #dbeafe;
+        font-size: 1.6rem;
+      }
+
+      .card-header-text h2 {
+        margin-bottom: 18px;
+        color: #1e40af;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .content-wrapper h3 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      .content-wrapper h4 {
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .content-wrapper p {
+        color: #475569;
+      }
+
+      /* =========================
+   KEY POINTS & LISTS
+========================= */
+      .code-block-content {
+        margin: 12px 0 22px;
+        padding: 20px 25px;
+        border: 1px solid #bfdbfe;
+        border-radius: 10px;
+        background: #eff6ff;
+      }
+
+      .code-block-content ul,
+      .content-wrapper ol,
+      .content-wrapper ul {
+        padding-left: 24px;
+      }
+
+      .content-wrapper li {
+        margin-bottom: 8px;
+      }
+
+      .content-wrapper li::marker {
+        color: var(--primary);
+      }
+
+      /* =========================
+   CODE EXAMPLES
+========================= */
+      .code-example {
+        margin: 18px 0;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+
+      .code-label,
+      .code-block-header {
+        padding: 10px 16px;
+        font-weight: 700;
+      }
+
+      .code-label {
+        background: #1e293b;
+        color: #93c5fd;
+        border-bottom: 1px solid #334155;
+      }
+
+      .code-example pre {
+        margin: 0;
+        padding: 20px;
+        overflow-x: auto;
+        white-space: pre;
+      }
+
+      .code-example code {
+        color: #bfdbfe;
+        font-family: Consolas, monospace;
+        font-size: 0.9rem;
+      }
+
+      .content-wrapper p code,
+      .content-wrapper li code,
+      .content-wrapper td code {
+        padding: 3px 6px;
+        border-radius: 5px;
+        background: #eff6ff;
+        color: #1d4ed8;
+        overflow-wrap: anywhere;
+      }
+
+      .code-block-header {
+        margin-top: 20px;
+        border-radius: 8px 8px 0 0;
+        background: #1d4ed8;
+        color: white;
+      }
+
+      .code-block-content {
+        border-radius: 0 0 8px 8px;
+      }
+
+      /* =========================
+   LIVE EXAMPLES
+========================= */
+      .live-example-block {
+        margin-top: 18px;
+        padding: 25px;
+        border: 1px dashed #cbd5e1;
+        border-radius: 12px;
+        background: #f8fafc;
+      }
+
+      .live-example-block hr {
+        margin: 20px 0;
+        border-color: #cbd5e1;
+      }
+
+      .live-example-block a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      .live-example-block a:hover {
+        text-decoration: underline;
+      }
+
+      /* =========================
+   TABLES
+========================= */
+      .styled-table,
+      .data-table {
+        width: 100%;
+        margin: 20px 0;
+        border-collapse: collapse;
+        background: white;
+      }
+
+      .styled-table th,
+      .styled-table td,
+      .data-table th,
+      .data-table td {
+        padding: 14px 16px;
+        border: 1px solid var(--border);
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      .styled-table thead th,
+      .data-table thead th {
+        background: #1d4ed8;
+        color: white;
+        font-weight: 700;
+      }
+
+      .styled-table tbody tr:nth-child(even),
+      .data-table tbody tr:nth-child(even) {
+        background: #f8fafc;
+      }
+
+      .styled-table tbody tr:hover,
+      .data-table tbody tr:hover {
+        background: #eff6ff;
+      }
+
+      .passed {
+        color: #16a34a;
+      }
+
+      /* =========================
+   FORMS
+========================= */
+      .sample-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .sample-form label {
+        margin-top: 8px;
+        font-weight: 500;
+      }
+
+      .sample-form input,
+      .sample-form select,
+      .sample-form textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        background: white;
+        color: var(--text);
+        font: inherit;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+      }
+
+      .sample-form input:focus,
+      .sample-form select:focus,
+      .sample-form textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgb(37 99 235 / 15%);
+      }
+
+      .sample-form textarea {
+        resize: vertical;
+      }
+
+      /* =========================
+   BUTTONS
+========================= */
+      .submit-btn,
+      .result-btn {
+        display: inline-block;
+        width: fit-content;
+        margin-top: 12px;
+        padding: 11px 22px;
+        border: none;
+        border-radius: 8px;
+        background: var(--primary);
+        color: white;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+      }
+
+      .submit-btn:hover,
+      .result-btn:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+      }
+
+      .content-wrapper a:has(.result-btn) {
+        text-decoration: none;
+      }
+
+      /* =========================
+   SPECIAL CARDS
+========================= */
+      .exercise-card {
+        border-top: 4px solid #8b5cf6 !important;
+      }
+
+      .next-steps-card {
+        border-top: 4px solid #0d9488 !important;
+      }
+
+      .dev-tools-card {
+        border-top: 4px solid #f59e0b !important;
+      }
+
+      .congratulations-card {
+        border-top: 4px solid #16a34a !important;
+        background: linear-gradient(135deg, #fff, #f0fdf4) !important;
+      }
+
+      /* =========================
+   RESPONSIVE
+========================= */
+      @media (max-width: 768px) {
+        .main-header {
+          padding: 45px 18px;
+        }
+
+        .content-wrapper {
+          margin: 24px auto;
+          padding: 0 12px;
+        }
+
+        .content-wrapper .card {
+          padding: 20px 16px;
+          margin-bottom: 20px;
+          border-radius: 12px;
+        }
+
+        .card-header-text h2 {
+          font-size: 1.3rem;
+        }
+
+        .live-example-block {
+          padding: 16px;
+        }
+
+        .styled-table,
+        .data-table {
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+
+        .code-example pre {
+          padding: 15px;
+        }
+
+        .sample-form input,
+        .sample-form select,
+        .sample-form textarea {
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header-content h1 {
+          font-size: 1.7rem;
+        }
+
+        .header-content p {
+          font-size: 0.95rem;
+        }
+
+        .content-wrapper .card {
+          padding: 16px 13px;
+        }
+
+        .card-header-icon {
+          width: 44px;
+          height: 44px;
+          font-size: 1.4rem;
+        }
+
+        .styled-table th,
+        .styled-table td,
+        .data-table th,
+        .data-table td {
+          padding: 10px;
+        }
+      }
